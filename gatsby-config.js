@@ -4,7 +4,15 @@ module.exports = {
     title: "desire",
   },
   plugins: [
-    "gatsby-plugin-sass",
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        sassOptions: {
+          data: `@import "${__dirname}/src/styles/style";`,
+        }
+
+      }
+    },
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",

@@ -1,0 +1,58 @@
+@import "src/styles/vars";
+
+.side-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  max-width: 694px;
+  background-color: #fff;
+  padding-top: 40px;
+  box-shadow: -1px 2px 20px 0px rgba($color: #000000, $alpha: 0.3);
+  z-index: 100;
+  &__close {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-bottom: 60px;
+  }
+  &__content {
+    text-align: center;
+    max-width: 484px;
+    margin: 0 auto;
+  }
+  &__logo {
+    margin-bottom: 42px;
+    display: inline-flex;
+  }
+  &__title {
+    @extend %title-font;
+    color: $black;
+    font-size: 36px;
+    line-height: 51px;
+    position: relative;
+    margin-bottom: 17px;
+    padding-bottom: 16px;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 0;
+      right: 0;
+      max-width: 252px;
+      margin: 0 auto;
+      height: 1px;
+      background-color: #979797;
+    }
+  }
+
+  &__text {
+    margin-bottom: 75px;
+  }
+  &__image {
+    max-width: 484px;
+  }
+}

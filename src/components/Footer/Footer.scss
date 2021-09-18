@@ -1,0 +1,130 @@
+@import "src/styles/vars";
+
+.footer {
+  &__content {
+    background-color: #dfdfdf;
+    padding: 60px 0 80px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 540px;
+  }
+  &__info-title {
+    color: $black;
+    @extend %title-font;
+    margin-bottom: 14px;
+    line-height: 23px;
+  }
+  &__info-text {
+    margin-bottom: 16px;
+    max-width: 475px;
+  }
+  &__info-email {
+    font-weight: 600;
+    color: $black;
+    font-size: 14px;
+    margin-bottom: 22px;
+    padding-left: 30px;
+    display: inline-block;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url("../../images/envelope.svg");
+      top: 8px;
+      left: 0;
+      width: 16px;
+      height: 12px;
+      position: absolute;
+    }
+  }
+  &__form {
+    display: flex;
+  }
+  &__form-input {
+    padding: 6px 10px 6px 18px;
+    border-radius: 21px;
+    background-color: transparent;
+    border: 1px solid rgba($black, 0.7);
+    width: 100%;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 28px;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif;
+      color: #a1a1a1;
+    }
+  }
+  &__form-button {
+    background-color: $black;
+    border: none;
+    color: white;
+    border-radius: 21px;
+    font-weight: 600;
+    padding: 6px 12px;
+    min-width: 160px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  &__social {
+    margin-right: auto;
+    margin-left: 100px;
+    width: 125px;
+  }
+  &__social-link {
+    padding-left: 28px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 3px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__social-link--facebook::before {
+    background-image: url("../../images/facebook.svg");
+  }
+  &__social-link--instagram::before {
+    background-image: url("../../images/instagram.svg");
+    width: 14px;
+    height: 14px;
+  }
+  &__social-link--pinterest::before {
+    background-image: url("../../images/pinterest.svg");
+    top: 2px;
+  }
+  &__social-link--whatsapp::before {
+    background-image: url("../../images/whatsapp.svg");
+    width: 14px;
+    height: 14px;
+  }
+  &__social-link--youtube::before {
+    background-image: url("../../images/youtube.svg");
+    width: 18px;
+    height: 12px;
+  }
+  &__social-item,
+  &__menu-item {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  &__social-link,
+  &__menu-link {
+    color: #707070;
+  }
+  &__menu {
+    margin-right: 60px;
+    width: 125px;
+  }
+  &__copyrigth {
+    padding: 41px 0 41px;
+    background-color: $black;
+    color: #a1a1a1;
+    text-align: center;
+  }
+}
