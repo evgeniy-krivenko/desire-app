@@ -1,0 +1,76 @@
+@import "src/styles/vars";
+
+.works-path {
+  padding: 80px 0 30px;
+  &__title {
+    @extend %title-font;
+    margin-bottom: 40px;
+    color: $black;
+    text-align: center;
+    font-size: 36px;
+    line-height: 51px;
+  }
+  &__items {
+  }
+  &__items-box {
+    display: flex;
+    border-bottom: 2px solid rgba($black, 0.7);
+    align-items: flex-end;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $black;
+    }
+  }
+  &__item {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    min-height: 100%;
+  }
+  &__item--production {
+    margin-left: 320px;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 2px;
+      height: 20px;
+      background-color: rgba($black, 0.7);
+    }
+  }
+  &__item--production,
+  &__item--consultation {
+    padding-bottom: 38px;
+  }
+  &__item--production--measurements {
+    padding-top: 38px;
+    margin-left: 306px;
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 20px;
+      position: absolute;
+      background-color: rgba($black, 0.7);
+    }
+  }
+  &__item-title {
+    margin-left: 13px;
+    @extend %title-font;
+    color: $black;
+  }
+  &__item-text {
+    margin-top: 13px;
+  }
+}

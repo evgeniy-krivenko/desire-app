@@ -1,0 +1,47 @@
+@import "src/styles/vars";
+
+.new__collection {
+  text-align: center;
+  padding: 45px 0 105px;
+  &-title {
+    @extend %title-font;
+    font-size: 36px;
+    line-height: 51px;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    &::after {
+      @extend %line;
+      width: 250px;
+      right: 0; // для выравнивания по середине
+    }
+  }
+  &-text {
+    max-width: 730px;
+    margin: 0 auto 30px;
+  }
+}
+
+.decor {
+  padding: 170px 0 155px;
+  background-image: url(../images/decor-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__title {
+    @extend %title-font;
+    color: $black;
+    max-width: 737px;
+    font-size: 60px;
+    line-height: 80px;
+    padding-bottom: 22px;
+    margin-bottom: 22px;
+    position: relative;
+    &::after {
+      @extend %line;
+      width: 200px;
+    }
+  }
+  &__text {
+    max-width: 540px;
+  }
+}

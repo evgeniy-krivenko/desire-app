@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Bedroom furniture",
+        "images": [
+            "../images/content/bedroom-1.jpg",
+            "../images/content/bedroom-2.jpg",
+            "../images/content/bedroom-3.jpg",
+            "../images/content/bedroom-4.jpg",
+            "../images/content/bedroom-5.jpg"
+        ]
+    },
+    {
+        "title": "Living room furniture",
+        "images": [
+            "../images/content/gallery-1-big.jpg",
+            "../images/content/gallery-2.jpg",
+            "../images/content/gallery-3.jpg",
+            "../images/content/gallery-4.jpg",
+            "../images/content/gallery-5.jpg"
+        ]
+    },
+    {
+        "title": "Bedroom furniture",
+        "images": [
+            "../images/content/gallery-1-big.jpg",
+            "../images/content/gallery-2.jpg",
+            "../images/content/gallery-3.jpg",
+            "../images/content/gallery-4.jpg",
+            "../images/content/gallery-5.jpg"
+        ]
+    },
+    {
+        "title": "Bedroom furniture",
+        "images": [
+            "../images/content/gallery-1-big.jpg",
+            "../images/content/gallery-2.jpg",
+            "../images/content/gallery-3.jpg",
+            "../images/content/gallery-4.jpg",
+            "../images/content/gallery-5.jpg"
+        ]
+    },
+    {
+        "title": "Bedroom furniture",
+        "images": [
+            "../images/content/gallery-1-big.jpg",
+            "../images/content/gallery-2.jpg",
+            "../images/content/gallery-3.jpg",
+            "../images/content/gallery-4.jpg",
+            "../images/content/gallery-5.jpg"
+        ]
+    }
+]

@@ -1,0 +1,52 @@
+@import "src/styles/vars";
+
+.collection {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 30px;
+  &__item {
+    position: relative;
+    &:hover {
+      .collection__info {
+        opacity: 1;
+      }
+    }
+  }
+  &__images {
+    min-height: 350px;
+    object-fit: cover;
+  }
+  &__info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(#fff, 0.7);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.6s;
+  }
+  &__info-title {
+    font-size: 20px;
+    line-height: 25px;
+    color: $black;
+    @extend %title-font;
+    position: relative;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    &::after {
+      @extend %line;
+      width: 80%;
+    }
+  }
+  &__info-text {
+    font-size: 14px;
+    line-height: 28px;
+    color: #707070;
+  }
+}
