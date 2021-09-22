@@ -5,9 +5,11 @@
     background-image: url("../../images/main_slider.jpg");
     background-repeat: no-repeat;
     min-height: 600px;
+    padding-bottom: 70px;
   }
   &__slider {
     width: 100%;
+    margin-bottom: 25px;
     max-width: 1784px;
     height: 772px;
     display: flex;
@@ -51,8 +53,20 @@
       background: #6d7278;
     }
   }
-  &__slider-btn {
-    cursor: pointer;
-    z-index: 100;
+  &__slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__slider-dot {
+    margin: 0 15px;
+    button {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      border: none;
+      font-size: 0;
+      padding: 0;
+    }
   }
 }

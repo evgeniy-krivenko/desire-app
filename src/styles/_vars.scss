@@ -1,7 +1,18 @@
 %title-font {
-    font-family: "Montserrat";
-    font-weight: 700;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+
+%line {
+  content: "";
+  bottom: 0;
+  left: 0;
+
+  height: 1px;
+  position: absolute;
+  margin: 0 auto;
+  background-color: #6d7278;
 }
 
 $black: #363838;
-$default: #5A5A5A;
+$default: #5a5a5a;
