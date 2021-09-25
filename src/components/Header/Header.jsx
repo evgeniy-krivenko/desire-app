@@ -18,16 +18,16 @@ export const Header = () => {
                     <nav className="menu">
                         <ul className="menu__list">
                             <li className="menu__list-item">
-                                <Link className="menu__list-link" to="/" >About</Link>
+                                <Link className="menu__list-link" to="/about" >About</Link>
                             </li>
                             <li className="menu__list-item">
                                 <Link className="menu__list-link" to="/" >Gallery</Link>
                             </li>
                         </ul>
                     </nav>
-                    <a href="#" className="logo">
+                    <Link to="/" className="logo">
                         <StaticImage src="../../images/logo.png" alt="logo" />
-                    </a>
+                    </Link>
                     <nav className="menu">
                         <ul className="menu__list">
                             <li className="menu__list-item">

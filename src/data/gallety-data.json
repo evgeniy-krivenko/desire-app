@@ -20,33 +20,33 @@
         ]
     },
     {
-        "title": "Bedroom furniture",
+        "title": "Office furniture",
         "images": [
-            "../images/content/gallery-1-big.jpg",
-            "../images/content/gallery-2.jpg",
-            "../images/content/gallery-3.jpg",
-            "../images/content/gallery-4.jpg",
-            "../images/content/gallery-5.jpg"
+            "../images/content/office-1.jpg",
+            "../images/content/office-2.jpg",
+            "../images/content/office-3.jpg",
+            "../images/content/office-4.jpg",
+            "../images/content/office-5.jpg"
         ]
     },
     {
-        "title": "Bedroom furniture",
+        "title": "Dining room furniture",
         "images": [
-            "../images/content/gallery-1-big.jpg",
-            "../images/content/gallery-2.jpg",
-            "../images/content/gallery-3.jpg",
-            "../images/content/gallery-4.jpg",
-            "../images/content/gallery-5.jpg"
+            "../images/content/dining-1.jpg",
+            "../images/content/dining-2.jpg",
+            "../images/content/dining-3.jpg",
+            "../images/content/dining-4.jpg",
+            "../images/content/dining-5.jpg"
         ]
     },
     {
-        "title": "Bedroom furniture",
+        "title": "Chair",
         "images": [
-            "../images/content/gallery-1-big.jpg",
-            "../images/content/gallery-2.jpg",
-            "../images/content/gallery-3.jpg",
-            "../images/content/gallery-4.jpg",
-            "../images/content/gallery-5.jpg"
+            "../images/content/chair-2.jpg",
+            "../images/content/chair-1.jpg",
+            "../images/content/chair-3.jpg",
+            "../images/content/chair-4.jpg",
+            "../images/content/chair-5.jpg"
         ]
     }
 ]

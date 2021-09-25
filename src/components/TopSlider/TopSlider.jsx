@@ -51,12 +51,12 @@ const TopSlider = ({ children }) => {
   }, [page])
 
   // автоматические переключение слайдов
-  useEffect(() => {
-    const interval = setInterval(() => {
-      paginate(1);
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [page, direction, paginate]);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     paginate(1);
+  //   }, 6000);
+  //   return () => clearInterval(interval);
+  // }, [page, direction, paginate]);
 
   // activeIndex не превышает длины массива, а начинает с 0, когда page больше длины массива
   const activeIndex = wrap(0, sliderData.length, page)
@@ -107,7 +107,7 @@ const Slide = ({ slide, direction, paginate }) => {
         }}
         className="top__slider-item"
       >
-        <StaticImage draggable="false" src="../../images/slider-img.png" className="top__slider-img" alt="images" width="703" height="815" />
+        <StaticImage draggable="false" src="../../images/slider-img.png" className="top__slider-img" alt="images" width={703} height={815} />
         <div className="top__slider-info">
           <h2 className="top__slider-title">{slide.title}</h2>
           <p className="top__slider__text">{slide.description}</p>
@@ -131,7 +131,7 @@ const Dots = ({ data, activeIndex, paginate }) => {
 
   return (
     <ul className="top__slider-dots">
-      {data.map((el, index) => <li className="top__slider-dot"><motion.button
+      {data.map((el, index) => <li key={index} className="top__slider-dot"><motion.button
         key={index}
         initial={"initial"}
         animate={activeIndex === index ? "active" : "initial"}

@@ -27,9 +27,20 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    column-gap: 35px;
+    row-gap: 30px;
   }
   &__item:first-child {
     grid-column: span 2;
     grid-row: span 2;
+    max-height: 1150px;
+  }
+  &__item {
+  }
+  &__item-img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 560px;
+    min-height: 100%;
   }
 }

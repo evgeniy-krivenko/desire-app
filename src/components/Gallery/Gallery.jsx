@@ -1,3 +1,4 @@
+import { AnimatePresence, motion } from 'framer-motion';
 import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
@@ -14,16 +15,17 @@ const Gallery = (props) => {
           id
           title
           images {
-        childImageSharp {
-          gatsbyImageData(width: 812)
-        }
-      }
+            id
+            childImageSharp {
+              gatsbyImageData(width: 812)
+            }
+          }
         }
       }
     }
   `)
 
-  console.log(nodes)
+  const images = [...nodes[activeIndex].images]
 
   return (
     <div className="gallery">
@@ -39,11 +41,7 @@ const Gallery = (props) => {
         </div>
         <div className="gallery__inner">
           <div className="gallery__items">
-            {nodes[activeIndex].images.map((img, index) => <GatsbyImage
-              className="gallery__item"
-              key={index}
-              width={812}
-              image={getImage(img.childImageSharp)} />)}
+            <GalleryImages images={images} />
           </div>
         </div>
       </div>
@@ -51,5 +49,28 @@ const Gallery = (props) => {
     </div>
   );
 };
+
+const GalleryImages = ({ images }) => {
+
+  return (
+    <AnimatePresence exitBeforeEnter>
+      {images.map((img, index) => <motion.a
+        href="#"
+        key={img.id}
+        initial={{ opacity: 0, y: 500, scale: 0.6 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: 500, scale: 0.6 }}
+        transition={{ opacity: { duration: 0.4 } }}
+        className="gallery__item"
+      ><GatsbyImage
+          className="gallery__item-img"
+          width={812}
+          alt="alt-img"
+          image={getImage(img.childImageSharp)} />
+      </motion.a>)
+      }
+    </AnimatePresence >
+  )
+}
 
 export default Gallery;
