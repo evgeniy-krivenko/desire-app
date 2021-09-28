@@ -1,37 +1,51 @@
-@import '../../styles/vars';
+@import "../../styles/vars";
 
 .header {
+  height: 120px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 120px;
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 120px;
-    }
-    &__btn {
-        padding: 0;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
+  }
+  &__btn {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .logo {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .menu {
-    padding-right: 15px;
-    &__list {
-        display: flex;
+  padding-right: 15px;
+  &__list {
+    display: flex;
+  }
+  // обращаемся к соседу (каждому второму элементу)
+  &__list-item {
+    padding-right: 35px;
+    padding-left: 45px;
+  }
+  &__list-link {
+    @extend %title-font;
+    color: #363838;
+  }
+  &__list-link--active {
+    padding-bottom: 4px;
+    position: relative;
+    &::after {
+      content: "";
+      bottom: 0;
+      right: 0;
+      left: 0;
+      height: 2px;
+      border-radius: 1px;
+      position: absolute;
+      background-color: rgba($black, 0.7);
     }
-    // обращаемся к соседу (каждому второму элементу)
-    &__list-item {
-        padding-right: 35px;
-        padding-left: 45px;
-    }
-    &__list-link {
-        @extend %title-font;
-        color: #363838;
-    }
+  }
 }

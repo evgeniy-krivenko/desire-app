@@ -18,7 +18,9 @@ export const Header = () => {
                     <nav className="menu">
                         <ul className="menu__list">
                             <li className="menu__list-item">
-                                <Link className="menu__list-link" to="/about" >About</Link>
+                                <Link className="menu__list-link"
+                                    to="/about"
+                                    activeClassName="menu__list-link--active">About</Link>
                             </li>
                             <li className="menu__list-item">
                                 <Link className="menu__list-link" to="/" >Gallery</Link>
@@ -43,7 +45,7 @@ export const Header = () => {
                         <StaticImage src="../../images/icon_menu.svg" alt="icon menu" />
                     </button>
 
-                    <SideMenu isOpen={isOpen} setOpen={setOpen} />
+                    {isOpen && <SideMenu isOpen={isOpen} setOpen={setOpen} />}
 
                 </div>
             </div>

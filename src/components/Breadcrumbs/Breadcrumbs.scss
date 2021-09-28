@@ -1,0 +1,22 @@
+@import "src/styles/vars";
+
+.breadcrumbs {
+  background-color: rgba(#dfdfdf, 0.5);
+  padding: 13px 0 14px;
+  &__list {
+    display: flex;
+  }
+  &__item::after {
+    content: "/";
+    margin-left: 2px;
+    margin-right: 6px;
+  }
+  &__item:last-child::after {
+    display: none;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 28px;
+    color: $default;
+  }
+}
