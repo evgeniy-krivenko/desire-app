@@ -8,6 +8,25 @@
         ],
         "detailTitle": "Our Inspiration in details",
         "detailText": "Semiotics fixie four dollar toast, next level woke scenester direct trade photo booth helvetica jean shorts. Fanny pack church-key cornhole, banh mi thundercats gochujang keytar.",
+        "detailImg": "../images/content/detail-chair.png",
+        "detailOptions": [
+            {
+                "optionTitle": "Design and technical drawings",
+                "optionPercent": "80%"
+            },
+            {
+                "optionTitle": "Measurments",
+                "optionPercent": "70%"
+            },
+            {
+                "optionTitle": "Furniture functionality analysis",
+                "optionPercent": "75%"
+            },
+            {
+                "optionTitle": "Interior visualization",
+                "optionPercent": "85%"
+            }
+        ],
         "slug": "/about",
         "breadcrumbs": [
             {"title": "Home", "slug": "/"},
