@@ -162,3 +162,14 @@
     margin-top: -2px;
   }
 }
+
+.partners {
+  padding: 16px 0 30px;
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  &__img {
+    margin: 0 auto;
+  }
+}

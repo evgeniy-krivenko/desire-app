@@ -1,0 +1,84 @@
+{
+  "title": "Gallery",
+  "galleryPage": [
+    {
+      "title": "Bedroom furniture",
+      "images": [
+        "../images/content/bedroom-1.jpg",
+        "../images/content/bedroom-2.jpg",
+        "../images/content/bedroom-3.jpg",
+        "../images/content/bedroom-4.jpg",
+        "../images/content/bedroom-5.jpg",
+        "../images/content/bedroom-1.jpg",
+        "../images/content/bedroom-2.jpg",
+        "../images/content/bedroom-3.jpg",
+        "../images/content/bedroom-4.jpg",
+        "../images/content/bedroom-5.jpg"
+      ]
+    },
+    {
+      "title": "Living room furniture",
+      "images": [
+        "../images/content/gallery-1-big.jpg",
+        "../images/content/gallery-2.jpg",
+        "../images/content/gallery-3.jpg",
+        "../images/content/gallery-4.jpg",
+        "../images/content/gallery-5.jpg",
+        "../images/content/gallery-1-big.jpg",
+        "../images/content/gallery-2.jpg",
+        "../images/content/gallery-3.jpg",
+        "../images/content/gallery-4.jpg",
+        "../images/content/gallery-5.jpg"
+      ]
+    },
+    {
+      "title": "Office furniture",
+      "images": [
+        "../images/content/office-1.jpg",
+        "../images/content/office-2.jpg",
+        "../images/content/office-3.jpg",
+        "../images/content/office-4.jpg",
+        "../images/content/office-5.jpg",
+        "../images/content/office-1.jpg",
+        "../images/content/office-2.jpg",
+        "../images/content/office-3.jpg",
+        "../images/content/office-4.jpg",
+        "../images/content/office-5.jpg"
+      ]
+    },
+    {
+      "title": "Dining room furniture",
+      "images": [
+        "../images/content/dining-1.jpg",
+        "../images/content/dining-2.jpg",
+        "../images/content/dining-3.jpg",
+        "../images/content/dining-4.jpg",
+        "../images/content/dining-5.jpg",
+        "../images/content/dining-1.jpg",
+        "../images/content/dining-2.jpg",
+        "../images/content/dining-3.jpg",
+        "../images/content/dining-4.jpg",
+        "../images/content/dining-5.jpg"
+      ]
+    },
+    {
+      "title": "Chair",
+      "images": [
+        "../images/content/chair-2.jpg",
+        "../images/content/chair-1.jpg",
+        "../images/content/chair-3.jpg",
+        "../images/content/chair-4.jpg",
+        "../images/content/chair-5.jpg",
+        "../images/content/chair-2.jpg",
+        "../images/content/chair-1.jpg",
+        "../images/content/chair-3.jpg",
+        "../images/content/chair-4.jpg",
+        "../images/content/chair-5.jpg"
+      ]
+    }
+  ],
+  "breadcrumbs": [
+    { "title": "Home", "slug": "/" },
+    { "title": "Gallery", "slug": "" }
+  ]
+}

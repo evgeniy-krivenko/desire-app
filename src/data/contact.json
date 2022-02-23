@@ -1,0 +1,159 @@
+{
+  "contactPage": {
+    "title": "Contact",
+    "h3": "Contact Us",
+    "breadcrumbs": [
+      { "title": "Home", "slug": "/" },
+      { "title": "Contact", "slug": "" }
+    ],
+    "aboutUs": "Vexillologist vape microdosing freegan pork belly deep v direct trade cray single-origin coffee street art. Viral shaman mustache master cleanse, pour-over affogato poutine copper mug marfa fanny pack normcore. Lo-fi pop-up banjo portland, echo park hammock",
+    "phone": "(415) 829-7934",
+    "addressFirst": "725 Green St",
+    "addressSecond": "San Francisco, California(CA), 94133",
+    "email": "ouremailaddress@email.com",
+    "socialItems": [
+      {
+        "slug": "https://facebook.com",
+        "img": "../images/facebook.svg"
+      },
+      {
+        "slug": "https://facebook.com",
+        "img": "../images/instagram.svg"
+      },
+      {
+        "slug": "https://facebook.com",
+        "img": "../images/pinterest.svg"
+      },
+      {
+        "slug": "https://facebook.com",
+        "img": "../images/whatsapp.svg"
+      },
+      {
+        "slug": "https://facebook.com",
+        "img": "../images/youtube.svg"
+      }
+    ],
+    "newCollectionPlates": [
+      {
+        "image": "../images/content/collection1.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection2.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection3.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection4.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection5.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection1.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection2.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection3.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection4.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection5.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection1.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection2.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection3.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection4.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection5.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection1.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection2.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection3.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection4.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection5.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection1.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection2.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection3.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection4.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection5.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection1.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection2.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection3.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection4.jpg",
+        "title": "Truffaut literally trust"
+      },
+      {
+        "image": "../images/content/collection5.jpg",
+        "title": "Truffaut literally trust"
+      }
+    ]
+  }
+}

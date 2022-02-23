@@ -51,12 +51,12 @@ const TopSlider = ({ children }) => {
   }, [page])
 
   // автоматические переключение слайдов
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     paginate(1);
-  //   }, 6000);
-  //   return () => clearInterval(interval);
-  // }, [page, direction, paginate]);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      paginate(1);
+    }, 6000);
+    return () => clearInterval(interval);
+  }, [page, direction, paginate]);
 
   // activeIndex не превышает длины массива, а начинает с 0, когда page больше длины массива
   const activeIndex = wrap(0, sliderData.length, page)
@@ -117,7 +117,7 @@ const Slide = ({ slide, direction, paginate }) => {
   )
 }
 
-const Dots = ({ data, activeIndex, paginate }) => {
+export const Dots = ({ data, activeIndex, paginate }) => {
 
   const clickHandler = (index) => {
     if (index === activeIndex) return

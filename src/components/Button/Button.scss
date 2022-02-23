@@ -1,0 +1,12 @@
+@import "src/styles/vars";
+
+.form-button {
+  background-color: $black;
+  border: none;
+  color: white;
+  border-radius: 21px;
+  font-weight: 600;
+  padding: 6px 12px;
+  min-width: 160px;
+  cursor: pointer;
+}

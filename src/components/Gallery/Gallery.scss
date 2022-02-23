@@ -35,7 +35,10 @@
     grid-row: span 2;
     max-height: 1150px;
   }
-  &__item {
+  &__item:nth-child(8) {
+    grid-column: span 2;
+    grid-row: span 2;
+    max-height: 1150px;
   }
   &__item-img {
     object-fit: cover;

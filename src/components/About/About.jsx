@@ -12,7 +12,8 @@ const About = (props) => {
     detailTitle,
     detailText,
     detailImg,
-    detailOptions
+    detailOptions,
+    partnersImg
   } = props;
 
   const [isActive, setActive] = useState(false);
@@ -86,6 +87,15 @@ const About = (props) => {
           </div>
         </div>
       </section>
+      <div className="partners">
+        <div className="container-fluid">
+          <div className="partners__items">
+            {partnersImg.map(img => (
+              <img className="partners__img" src={img.publicURL} />
+            ))}
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

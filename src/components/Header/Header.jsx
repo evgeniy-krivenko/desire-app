@@ -23,7 +23,10 @@ export const Header = () => {
                                     activeClassName="menu__list-link--active">About</Link>
                             </li>
                             <li className="menu__list-item">
-                                <Link className="menu__list-link" to="/" >Gallery</Link>
+                                <Link className="menu__list-link"
+                                    to="/gallery"
+                                    activeClassName="menu__list-link--active"
+                                >Gallery</Link>
                             </li>
                         </ul>
                     </nav>
@@ -36,7 +39,11 @@ export const Header = () => {
                                 <Link className="menu__list-link" to="/" >Blog</Link>
                             </li>
                             <li className="menu__list-item">
-                                <Link className="menu__list-link" to="/" >Contact</Link>
+                                <Link
+                                    className="menu__list-link"
+                                    to="/contact"
+                                    activeClassName="menu__list-link--active"
+                                >Contact</Link>
                             </li>
 
                         </ul>

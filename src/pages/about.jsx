@@ -2,23 +2,25 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import About from '../components/About/About';
 import Breadcrumbs from '../components/Breadcrumbs/Breadcrumbs';
+import ImageCollection from '../components/ImageCollection/ImageCollection';
 import Layout from '../components/Layout/Layout';
 
-const about = ({ data: { pagesJson } }) => {
+const about = ({ data: { dataJson } }) => {
 
-    const { breadcrumbs, ...otherProps } = pagesJson;
+    const { breadcrumbs, aboutCollectionPlates, ...otherProps } = dataJson;
 
     return (
         <Layout>
             <Breadcrumbs items={breadcrumbs} />
             <About {...otherProps} />
+            <ImageCollection data={aboutCollectionPlates} />
         </Layout>
     )
 }
 
 export const queryAbout = graphql`
     query AboutPageQuery {
-        pagesJson(title: {eq: "About"}) {
+        dataJson(title: {eq: "About"}) {
             title
             contentTitle
             contentParagraphs
@@ -33,11 +35,22 @@ export const queryAbout = graphql`
                 optionPercent
                 optionTitle
             }
+            partnersImg {
+                publicURL
+            }
             slug
-            h1
             breadcrumbs {
                 title
                 slug
+            }
+            aboutCollectionPlates {
+                title
+                text
+                image {
+                    childImageSharp {
+                    gatsbyImageData
+                    }
+                }
             }
         }
     }

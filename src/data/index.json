@@ -1,0 +1,105 @@
+{
+  "title": "Home",
+  "h1": "",
+  "slug": "/",
+  "newCollectionTitle": "Furniture new collection",
+  "newCollectionText": "Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint",
+  "newCollectionPlates": [
+    {
+      "image": "../images/content/collection1.jpg",
+      "title": "Truffaut literally trust",
+      "text": "Living room furntiture | Chair"
+    },
+    {
+      "image": "../images/content/collection2.jpg",
+      "title": "Truffaut literally trust",
+      "text": "Living room furntiture | Chair"
+    },
+    {
+      "image": "../images/content/collection3.jpg",
+      "title": "Truffaut literally trust",
+      "text": "Living room furntiture | Chair"
+    },
+    {
+      "image": "../images/content/collection4.jpg",
+      "title": "Truffaut literally trust",
+      "text": "Living room furntiture | Chair"
+    },
+    {
+      "image": "../images/content/collection5.jpg",
+      "title": "Truffaut literally trust",
+      "text": "Living room furntiture | Chair"
+    }
+  ],
+  "gallery": [
+    {
+      "title": "Bedroom furniture",
+      "images": [
+        "../images/content/bedroom-1.jpg",
+        "../images/content/bedroom-2.jpg",
+        "../images/content/bedroom-3.jpg",
+        "../images/content/bedroom-4.jpg",
+        "../images/content/bedroom-5.jpg"
+      ]
+    },
+    {
+      "title": "Living room furniture",
+      "images": [
+        "../images/content/gallery-1-big.jpg",
+        "../images/content/gallery-2.jpg",
+        "../images/content/gallery-3.jpg",
+        "../images/content/gallery-4.jpg",
+        "../images/content/gallery-5.jpg"
+      ]
+    },
+    {
+      "title": "Office furniture",
+      "images": [
+        "../images/content/office-1.jpg",
+        "../images/content/office-2.jpg",
+        "../images/content/office-3.jpg",
+        "../images/content/office-4.jpg",
+        "../images/content/office-5.jpg"
+      ]
+    },
+    {
+      "title": "Dining room furniture",
+      "images": [
+        "../images/content/dining-1.jpg",
+        "../images/content/dining-2.jpg",
+        "../images/content/dining-3.jpg",
+        "../images/content/dining-4.jpg",
+        "../images/content/dining-5.jpg"
+      ]
+    },
+    {
+      "title": "Chair",
+      "images": [
+        "../images/content/chair-2.jpg",
+        "../images/content/chair-1.jpg",
+        "../images/content/chair-3.jpg",
+        "../images/content/chair-4.jpg",
+        "../images/content/chair-5.jpg"
+      ]
+    }
+  ],
+  "blogTitle": "More inspiration ideas in our blog",
+  "blogPosts": [
+    {
+      "img": "../images/blog/blog-1.jpg",
+      "title": "Listicle actually selvage activated charcoal for the drinking vinegar",
+      "author": "Ann Summers",
+      "date": "2020-04-12",
+      "category": "Inrerior",
+      "url": "listicle-2020-04-12"
+    },
+    {
+      "img": "../images/blog/blog-2.jpg",
+      "title": "Red selfies edison bulb four dollar toast humblebrag",
+      "author": "Finnagan Morningstar",
+      "date": "2020-09-28",
+      "category": "Dining room interior",
+      "url": "red-selfies-2020-09-28"
+    }
+  ]
+}

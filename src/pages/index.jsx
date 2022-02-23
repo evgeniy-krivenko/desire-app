@@ -9,10 +9,17 @@ import BlogBox from '../components/BlogBox/BlogBox'
 import Layout from '../components/Layout/Layout'
 
 
-
 // markup
 const IndexPage = ({ data }) => {
-  const { allMainBlogBoxJson: { nodes } } = data;
+
+  const {
+    newCollectionTitle,
+    newCollectionText,
+    newCollectionPlates,
+    gallery,
+    blogTitle,
+    blogPosts,
+  } = data.dataJson;
 
   return (
     <Layout>
@@ -20,12 +27,12 @@ const IndexPage = ({ data }) => {
       <section className="new__collection">
         <div className="container-fluid">
           <h3 className="new__collection-title">
-            Furniture new collection
+            {newCollectionTitle}
           </h3>
           <p className="new__collection-text">
-            Deep v you probably haven't heard of them banh mi synth actually affogato. Aesthetic lyft ethical drinking vinegar austint
+            {newCollectionText}
           </p>
-          <ImageCollection />
+          <ImageCollection data={newCollectionPlates} />
         </div>
       </section>
       <section className="decor">
@@ -38,25 +45,49 @@ const IndexPage = ({ data }) => {
         </div>
       </section>
       <WorksPath />
-      <Gallery />
-      <BlogBox posts={nodes} />
+      <Gallery data={gallery} />
+      <BlogBox title={blogTitle} posts={blogPosts} />
     </Layout>
   )
 }
 
 export const query = graphql`
-  query IndexPageQuery {
-    allMainBlogBoxJson {
-      nodes {
+  {
+    dataJson(title: {eq: "Home"}) {
+      slug
+      title
+      newCollectionTitle
+      newCollectionText
+      newCollectionPlates {
         title
-        id
+        text
+        image {
+          id
+          childImageSharp {
+            gatsbyImageData
+          }
+        }
+      }
+      blogTitle
+      blogPosts {
         author
         category
         date
+        title
+        url
         img {
           childImageSharp {
             gatsbyImageData
           }
+        }
+      }
+      gallery {
+        title
+        images {
+          id
+          childImageSharp {
+              gatsbyImageData(width: 812)
+            }
         }
       }
     }

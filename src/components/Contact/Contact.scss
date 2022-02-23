@@ -1,0 +1,43 @@
+@import "src/styles/vars";
+
+.contact {
+  padding-bottom: 100px;
+  padding-bottom: 100px;
+  &__title {
+    @extend %title-font;
+    color: $black;
+    font-size: 36px;
+    position: relative;
+    padding-bottom: 35px;
+    margin-bottom: 40px;
+    &::after {
+      @extend %line;
+      width: 200px;
+    }
+  }
+  &__social {
+    margin-left: 284px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  &__social-item + .contact__social-item {
+    padding-left: 40px;
+  }
+  &__info {
+    margin-left: 284px;
+  }
+  &__text {
+    margin-bottom: 10px;
+    color: #a1a1a1;
+  }
+  &__phone {
+    color: $default;
+  }
+  &__city {
+    margin-bottom: 16px;
+  }
+  &__form {
+    margin-left: 284px;
+  }
+}

@@ -1,0 +1,33 @@
+@import "src/styles/vars";
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__input {
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    padding: 6px 17px;
+    margin-bottom: 13px;
+    width: 49%;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 28px;
+      color: #a1a1a1;
+    }
+  }
+  &__area {
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    padding: 14px 17px;
+    margin-bottom: 20px;
+    min-height: 125px;
+    resize: none;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 28px;
+      color: #a1a1a1;
+    }
+  }
+}

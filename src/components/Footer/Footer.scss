@@ -22,24 +22,7 @@
     margin-bottom: 16px;
     max-width: 475px;
   }
-  &__info-email {
-    font-weight: 600;
-    color: $black;
-    font-size: 14px;
-    margin-bottom: 22px;
-    padding-left: 30px;
-    display: inline-block;
-    position: relative;
-    &::before {
-      content: "";
-      background-image: url("../../images/envelope.svg");
-      top: 8px;
-      left: 0;
-      width: 16px;
-      height: 12px;
-      position: absolute;
-    }
-  }
+
   &__form {
     display: flex;
   }
@@ -57,16 +40,8 @@
       color: #a1a1a1;
     }
   }
-  &__form-button {
-    background-color: $black;
-    border: none;
-    color: white;
-    border-radius: 21px;
-    font-weight: 600;
-    padding: 6px 12px;
-    min-width: 160px;
+  &__form-btn {
     margin-left: 8px;
-    cursor: pointer;
   }
   &__social {
     margin-right: auto;

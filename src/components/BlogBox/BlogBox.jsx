@@ -8,11 +8,11 @@ const formatDate = (date) => {
   return new Date(Date.parse(date)).toLocaleDateString("en-US", options)
 }
 
-const BlogBox = ({ posts }) => {
+const BlogBox = ({ title, posts }) => {
   return (
     <section className="blog-box">
       <div className="container">
-        <h3 className="blog-box__title">More inspiration ideas in our blog</h3>
+        <h3 className="blog-box__title">{title}</h3>
         <div className="blog-box__items">
           {posts.map((el, index) => (
             <div key={el.id} className="blog-box__item">

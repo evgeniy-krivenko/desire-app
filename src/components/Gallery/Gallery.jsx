@@ -1,37 +1,19 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { graphql, useStaticQuery } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React, { useState } from 'react';
 import './Gallery.scss';
 
-const Gallery = (props) => {
+const Gallery = ({ data }) => {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const { allGalletyDataJson: { nodes } } = useStaticQuery(graphql`
-    query GalletyQuery {
-      allGalletyDataJson {
-        nodes {
-          id
-          title
-          images {
-            id
-            childImageSharp {
-              gatsbyImageData(width: 812)
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const images = [...nodes[activeIndex].images]
+  const images = [...data[activeIndex].images]
 
   return (
     <div className="gallery">
       <div className="container-fluid">
         <div className="gallery__buttons">
-          {nodes.map((n, index) => <button
+          {data.map((n, index) => <button
             className={activeIndex === index ? "gallery__btn active" : "gallery__btn"}
             key={index}
             onClick={() => setActiveIndex(index)}

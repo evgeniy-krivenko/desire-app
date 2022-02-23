@@ -1,5 +1,6 @@
 import React from 'react';
 import EmailForm from '../EmailForm/EmailForm';
+import InfoEmail from '../InfoEmail/InfoEmail';
 import './Footer.scss';
 
 const Footer = (props) => {
@@ -11,9 +12,7 @@ const Footer = (props) => {
             <div className="footer__info">
               <h6 className="footer__info-title">Contact Us</h6>
               <p className="footer__info-text">Keffiyeh poutine etsy, paleo cray put a bird on it microdosing schlitz you probably occupy</p>
-              <a className="footer__info-email" href="mailto:ouremailaddress@email.com" >
-                ouremailaddress@email.com
-              </a>
+              <InfoEmail email={"ouremailaddress@email.com"} />
               <EmailForm className="footer" />
             </div>
             <ul className="footer__social">
